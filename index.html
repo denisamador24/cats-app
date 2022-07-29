@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cats App</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="title">Cats App</h1>
+  <section class="random-load">
+    <h2>Random Cats</h2>
+    <div class="random-load_container">
+      <figure>
+         <img id="rImg1" class="random-load__img" alt="imagen de gatos aleatorio">
+         <button onclick="saveFavoriteCat(0)">add favorites</button>
+      </figure>
+       <figure>
+         <img id="rImg2" class="random-load__img" alt="imagen de gatos aleatorio">
+         <button onclick="saveFavoriteCat(1)">add favorites</button>
+      </figure>
+       <figure>
+         <img id="rImg3" class="random-load__img" alt="imagen de gatos aleatorio">
+         <button onclick="saveFavoriteCat(2)">add favorites</button>
+       </figure>
+    </div>
+  </section>
+  
+  <section class="upload-file">
+    <h2>Upload Picture</h2>
+    <form id="uploadingForm">
+      <input id="file" type="file" name="file" >
+      <button type="button" onclick="uploadCatPhoto()">Upload</button>
+    </form>
+  </section>
+   
+  <section class="favorites">
+    <h2>favorite cats</h2>
+    <div id="favorites__container">
+      
+    </div>
+  </section>
+  <!-- Project -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
